@@ -10,6 +10,7 @@
         .result-box { background: #f9f9f9; padding: 15px; border-left: 5px solid #007bff; margin-top: 20px; }
         .alert-excellent { color: green; font-weight: bold; }
         .alert-improvement { color: red; font-weight: bold; }
+        .alert-average {color:orange; font-weight: bold;}
         input[type="number"] { padding: 5px; margin-bottom: 10px; width: 100px; }
         button { padding: 8px 15px; background: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; }
         button:hover { background: #0056b3; }
@@ -95,7 +96,7 @@
         } elseif ($average < 50) {
             echo "<span class='alert-improvement'>Needs Improvement</span><br>";
         } else {
-            echo "<span>Average Performance</span><br>";
+            echo "<span class='alert-average'>Average Performance</span><br>";
         }
 
         echo "</div>";
